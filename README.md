@@ -13,4 +13,5 @@ npm run dev
 npm run deploy
 ```
 
-## [show the Banner](https://ngtungngo.github.io/banner/) 
+## <a href="https://ngtungngo.github.io/banner/" target="_blank">show the Banner</a> or 
+![QR](./public/images/qr.gif)
