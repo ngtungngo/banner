@@ -23,11 +23,12 @@ const Abi2024 = () => {
     <Container>
       <Card>
         <Content>
-          <Title>Abi 20234/Title>
+          <Title>Abi 2024</Title>
+          {YourFamily.shout("KING")}
           <Subtitle>
-            Thien Minh, du schaffst das. Ziehe deinen Zug zum Schachmatt!
+            <p>The King is a fighting piece.Use it!</p>
+            <p>Thiên Minh, du schaft es!</p>
           </Subtitle>
-          {YourFamily.shout("Thiên Minh, Cố lên!")}
         </Content>
       </Card>
     </Container>
