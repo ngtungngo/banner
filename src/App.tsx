@@ -5,7 +5,7 @@ import React from "react"
 
 const App = (): JSX.Element => (
     <main className="mt-4 h-full">
-      <Abi2023 />
+      <Abi2024 />
     </main>
   )
 
