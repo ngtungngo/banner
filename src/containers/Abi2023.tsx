@@ -34,4 +34,4 @@ const Abi2024 = () => {
   )
 }
 
-export default Abi2023
+export default Abi2024
