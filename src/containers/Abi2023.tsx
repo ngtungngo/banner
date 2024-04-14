@@ -18,16 +18,16 @@ const Subtitle = ({
                     children,
                   }: PropsWithChildren) => <p className="py-4 iphone:pt-0 font-thin font-serif">{children}</p>
 
-const Abi2023 = () => {
+const Abi2024 = () => {
   return (
     <Container>
       <Card>
         <Content>
-          <Title>Abi 2023</Title>
+          <Title>Abi 20234/Title>
           <Subtitle>
-            The superior tactic is to never give up !
+            Thien Minh, du schaffst das. Ziehe deinen Zug zum Schachmatt!
           </Subtitle>
-          {YourFamily.shout("Thiên Ân, Cố lên!")}
+          {YourFamily.shout("Thiên Minh, Cố lên!")}
         </Content>
       </Card>
     </Container>
