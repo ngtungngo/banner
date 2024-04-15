@@ -1,11 +1,20 @@
-import React from 'react'
-import Abi2024 from './containers/Abi2024'
-import { MultipleChoice } from './containers/MultipleChoice'
+import React, {useEffect} from "react"
+import {MultipleChoice} from "./containers/MultipleChoice"
 
 
 const App = (): JSX.Element => {
 	const [stage, setStage] = React.useState<number>(0)
 	const [notification, setNotification] = React.useState<string | undefined>('')
+	const [answers, setAnswers] = React.useState<Record<string, string>>({})
+
+	useEffect(() => {
+		setAnswers({
+			'A': 'sau froh',
+			'B': 'Auto',
+			'C': 'Bauklo',
+			'D': 'schaut so'
+		})
+	}, [])
 
 	const advance = (isCorrect: boolean, congrats?: string, fail?: string) => {
 		if (isCorrect) {
@@ -22,7 +31,7 @@ const App = (): JSX.Element => {
 			<MultipleChoice
 				title={'Deutschabitur Probeklausur: '}
 				question={'Was reimt sich auf Auto?'}
-				answers={[['A', 'sau froh'], ['B', 'Auto'], ['C', 'Bauklo'], ['D', 'schaut so']]}
+				answers={answers}
 				correctAnswer={1}
 				advance={advance}
 			/>
