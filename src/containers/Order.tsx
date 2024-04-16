@@ -14,8 +14,8 @@ export const Order = ({title, question, answers, correctOrder, advance}: {
 	const shades = ['emerald-700', 'pink-800', 'amber-500', 'blue-800']
 	const bg = primaryColors.map((color) => `bg-${color}`)
 	const hoverColors = ['hover:bg-emerald-500', 'hover:bg-pink-700', 'hover:bg-amber-400', 'hover:bg-blue-600']
-	const borderColors = shades.map((color) => `border-${color}`)
-	const numberColors = shades.map((color) => `text-${color}`)
+	const borderColors = ['border-emerald-700', 'border-pink-800', 'border-amber-500', 'border-blue-800']
+	const numberColors = ['text-emerald-800', 'text-pink-900', 'text-amber-600', 'text-blue-900']
 	const [chosenOrder, setChosenOrder] = React.useState<CorrectNumber[]>([])
 
 	const handleClick = (i: CorrectNumber) => {
@@ -52,7 +52,7 @@ export const Order = ({title, question, answers, correctOrder, advance}: {
 									text-center align-middle flex items-center justify-center
 								`}>
 									{chosenOrder.includes(i as CorrectNumber) && (
-										<span className={``}>
+										<span>
 											{chosenOrder.indexOf(i as CorrectNumber) + 1}
 										</span>
 									)}

@@ -13,14 +13,14 @@ const Abi2024 = () => {
 			<Card>
 				<Content>
 					<Title>Abi 2024</Title>
-					<div className="flex flex-col gap-4 items-start">
-						<p className="text-h5">Thien-Minh...</p>
-						<div className="ml-10 mr-12 text-h6 gap-2 flex flex-col">
+					<div className="flex flex-col gap-4 items-start animate-[glow_7s_infinite]">
+						<p className="text-h5 animate-[glow_7s_infinite]">Thien-Minh...</p>
+						<div className="ml-10 mr-12 text-h6 gap-2 flex flex-col animate-[glow_7s_infinite]">
 							<p>...Ausländer, ...</p>
 							<p>...Dichter, ...</p>
 							<p>...Denker, ...</p>
 						</div>
-						<p className="text-h5 self-end">... Abiturient</p>
+						<p className="text-h5 self-end animate-[glow_7s_infinite]">... Abiturient</p>
 						<p className="text-slate-400 text-sm self-end">
 							Du <s className="italic">bist</s> <b>kannst werden</b> was du <s className="italic">isst</s> <b>auch immer werden willst!</b>
 						</p>

@@ -23,20 +23,17 @@ export default {
       'ipad': { 'max': '768px', 'min': '768px' },
       'ipad-air': { 'max': '820px', 'min': '820px' },
     },
-    borderColor: theme => ({
-      ...theme('colors'),
-      DEFAULT: theme('colors.gray.300', 'currentColor'),
-      'hurz-g': '#89fc00',
-      'hurz-b': '#00CCF5',
-      'hurz-p': '#F50076',
-      'hurz-y': '#FFCF00',
-    }),
     extent: {
-      colors: {
-        'hurz-g': '#89fc00',
-        'hurz-b': '#00CCF5',
-        'hurz-p': '#F50076',
-        'hurz-y': '#FFCF00',
+      animation: {
+        'glowing': 'glow 7s infinite'
+      },
+      keyframes: {
+        glow: {
+          '0%': { color: 'red' },
+          '33%': { color: 'blue' },
+          '66%': { color: 'green' },
+          '100%': { color: 'red' },
+        }
       }
     }
   },
