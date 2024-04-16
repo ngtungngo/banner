@@ -17,9 +17,9 @@ export const GeschichtsAbi = ({advance}: {advance: (isCorrect: boolean) => void}
 	<Quote
 		title={'Geschichtsabitur Probeklausur: '}
 		question={'Wie endet folgendes Zitat?'}
-		partialQuote={'Wenn Oma Glück hat...'}
+		partialQuote={'Wenn Oma Glück hat,...'}
 		correctAnswer={'kann sie grossmutter werden'}
-		author={'Thien-Minh Ngo'}
+		author={'Thiên Minh Ngo'}
 		advance={advance}
 	/>
 )
@@ -28,7 +28,7 @@ export const IntegrationsTest = ({advance}: {advance: (isCorrect: boolean) => vo
 	<Order
 		title={'Integrations Test: '}
 		question={'In welcher Reihenfolge werden die folgenden Fragen üblicherweise gestellt?'}
-		answers={['Bist du Japaner', 'Kommst du aus Korea?', 'Häh?', 'Bist du Chinese??']}
+		answers={['Bist du Japaner ?', 'Kommst du aus Korea?', 'Häh?', 'Bist du Chinese??']}
 		correctOrder={[3, 0, 1, 2]}
 		advance={advance}
 	/>

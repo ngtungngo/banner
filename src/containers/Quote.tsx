@@ -28,13 +28,6 @@ export const Quote = ({title, question, partialQuote, author, correctAnswer, adv
 
 	return (
 		<>
-			{/*{notification && (*/}
-			{/*	<Card>*/}
-			{/*		<p className="text-h6">*/}
-			{/*			{notification}*/}
-			{/*		</p>*/}
-			{/*	</Card>*/}
-			{/*)}*/}
 			<Container>
 				<Card>
 					<Title>
@@ -48,6 +41,7 @@ export const Quote = ({title, question, partialQuote, author, correctAnswer, adv
 							type="text"
 							className="w-full border focus:border-pink-300 focus:outline-none rounded-md text-h7 h-8 px-1"
 							onChange={handleChange}
+							placeholder="k--n s-- ... w---n"
 						/>
 						{author && <p className="text-xl font-light text-gray-500 self-end italic">— {author}</p>}
 					</div>

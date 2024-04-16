@@ -3,7 +3,7 @@ import Container from './Container';
 
 import { PropsWithChildren } from 'react';
 
-const Title = ({children}: PropsWithChildren) => <p className="text-h5 iphone:text-body-1 mb-10">{children}</p>;
+const Title = ({children}: PropsWithChildren) => <p className="text-h5 iphone:text-body-1 mb-[1rem]">{children}</p>;
 
 const Content = ({children}: PropsWithChildren) => <div className="flex flex-col items-start">{children}</div>;
 
