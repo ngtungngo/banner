@@ -11,7 +11,7 @@ const Abi2024 = () => {
 					<div className="flex flex-col gap-4 items-start animate-[glow_7s_infinite]">
 						<p className="text-h5 font-bold animate-[glow_7s_infinite]">Thiên Minh...</p>
 						<div className="ml-10 mr-12 text-h6 gap-2 flex flex-col animate-[glow_7s_infinite]">
-							<p>...Deutscher <span className="text-slate-400 italic text-sm">#Migrationshintergrund</span>, ...</p>
+							<p>...Deutscher <span className="text-slate-400 italic text-[16px]">#Migrationshintergrund</span>, ...</p>
 							<p>...Dichter, ...</p>
 							<p>...Denker, ...</p>
 						</div>

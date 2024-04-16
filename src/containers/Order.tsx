@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Container, Question, Title } from '../components'
+import resetImg from '../assets/reset_icon.svg'
 
 type CorrectNumber = 0 | 1 | 2 | 3
 
@@ -67,7 +68,7 @@ export const Order = ({title, question, answers, correctOrder, advance}: {
 							className="w-11 h-11 p-2 self-end rounded-full bg-slate-300 hover:bg-slate-400"
 							onClick={() => setChosenOrder([])}
 						>
-							<img src="../assets/reset_icon.svg" alt="reset"/>
+							<img src={resetImg} alt="reset"/>
 						</button>
 					</div>
 				</Card>
