@@ -1,0 +1,1 @@
+export * as resetIcon from './resetIcon.svg'

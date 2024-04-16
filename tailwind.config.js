@@ -23,6 +23,22 @@ export default {
       'ipad': { 'max': '768px', 'min': '768px' },
       'ipad-air': { 'max': '820px', 'min': '820px' },
     },
+    borderColor: theme => ({
+      ...theme('colors'),
+      DEFAULT: theme('colors.gray.300', 'currentColor'),
+      'hurz-g': '#89fc00',
+      'hurz-b': '#00CCF5',
+      'hurz-p': '#F50076',
+      'hurz-y': '#FFCF00',
+    }),
+    extent: {
+      colors: {
+        'hurz-g': '#89fc00',
+        'hurz-b': '#00CCF5',
+        'hurz-p': '#F50076',
+        'hurz-y': '#FFCF00',
+      }
+    }
   },
   plugins: [],
 }

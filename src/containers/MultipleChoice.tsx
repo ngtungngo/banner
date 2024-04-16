@@ -1,28 +1,43 @@
-import { Card, Container, Content, Subtitle, Title } from '../components'
+import { Card, Container, Content, Question, Title } from '../components'
+import React from 'react'
 
 
-export const MultipleChoice = ({ title, question, answers }: {
-	title: string;
-	question: string;
-	answers: [string, string][];
-	correctAnswer: number;
-	advance: (isCorrect: boolean) => void;
+export const MultipleChoice = ({ title, question, answers, correctAnswer, advance }: {
+	title: string,
+	question: string,
+	answers: [string, string][],
+	correctAnswer: number,
+	advance: (isCorrect: boolean) => void,
 }) => {
+	const colors = ['bg-emerald-400', 'bg-pink-600', 'bg-amber-300', 'bg-blue-500']
+	const hoverColors = ['hover:bg-emerald-500', 'hover:bg-pink-700', 'hover:bg-amber-400', 'hover:bg-blue-600']
+
+	const handleClick = (i: number) => {
+		advance(i === correctAnswer)
+	}
+
 	return (
 		<Container>
 			<Card>
 				<Content>
 					<Title>{title}</Title>
-					<p className="text-h4 iphone:text-h5 font-bold text-left">{question}</p>
-					<Subtitle>
-						<div className="flex flex-auto flex-col">
-							{answers.map(([ letter, answer ]) => (
-								<button key={letter} className="py-4 iphone:pt-0 font-thin font-serif text-left">
-									{letter}: {answer}
+					<Question question={question} />
+					<div className="py-4 iphone:pt-0 w-full">
+						<div className="flex flex-auto flex-col w-full gap-2">
+							{answers.map(([ letter, answer ], i) => (
+								<button
+									key={i}
+									className={`
+										p-4 iphone:pt-0 text-h7 font-light font-sans text-left
+										w-full border-0 ${colors[i]} ${hoverColors[i]} rounded-lg
+									`}
+									onClick={() => handleClick(i)}
+								>
+									<span className="font-semibold">{letter}:</span> <span className="hover:italic">{answer}</span>
 								</button>
 							))}
 						</div>
-					</Subtitle>
+					</div>
 				</Content>
 			</Card>
 		</Container>
