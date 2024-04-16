@@ -28,7 +28,7 @@ export const MultipleChoice = ({ title, question, answers, correctAnswer, advanc
 								<button
 									key={i}
 									className={`
-										p-4 iphone:pt-0 text-h7 font-light font-sans text-left
+										p-4 text-h7 font-light font-sans text-left items-center
 										w-full border-0 text-white ${bgColors[i]} ${hoverColors[i]} rounded-lg 
 									`}
 									onClick={() => handleClick(i)}

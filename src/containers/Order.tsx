@@ -46,7 +46,7 @@ export const Order = ({title, question, answers, correctOrder, advance}: {
 							<div
 								key={i}
 								className={`
-									py-4 iphone:pt-0 text-h7 font-light font-sans text-left text-2xl content-center
+									py-4 text-h7 font-light font-sans text-left text-2xl content-center
 									w-full border-0 px-4 text-white hover:cursor-pointer ${bg[i]} ${hoverColors[i]} rounded-lg flex flex-row gap-3 items-center
 								`}
 								onClick={() => handleClick(i as CorrectNumber)}
